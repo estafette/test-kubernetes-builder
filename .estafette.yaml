@@ -1,0 +1,19 @@
+builder:
+  track: dev
+  type: kubernetes
+
+labels:
+  app-group: estafette-ci
+  team: estafette
+
+stages:
+  test:
+    image: alpine:3.13
+    env:
+      MY_ENV: hey there
+    commands:
+    - echo "We are just getting started...""
+    - sleep 15s
+    - echo "MY_ENV: ${MY_ENV}"
+    - echo "And.. we're done"
+    - exit 1
