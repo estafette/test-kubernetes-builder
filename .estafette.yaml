@@ -12,8 +12,8 @@ stages:
     env:
       MY_ENV: hey there
     commands:
-    - echo "We are just getting started..."
+    - 'echo "We are just getting started..."'
     - sleep 15s
-    - echo "MY_ENV: ${MY_ENV}"
-    - echo "And.. we're done!"
+    - 'echo "MY_ENV: ${MY_ENV}"'
+    - 'echo "And.. we are done!"'
     - exit 1
